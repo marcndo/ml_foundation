@@ -51,4 +51,4 @@ Significant performance differences were observed across models, with Linear Reg
 * Further optimize model hyperparameters.
 
 ## Author
-[Marcel Ambo Ndowah]
+Marcel Ambo Ndowah
