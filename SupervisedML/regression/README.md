@@ -43,6 +43,7 @@ This project focuses on predicting house prices using machine learning. It invol
 | Gradient Boosting Regressor| $305397.92  | 0.7735  |                                |
 
 ## Key Findings
+Significant performance differences were observed across models, with Linear Regression struggling notably. While Random Forest Regressor consistently achieved the highest R-squared, reaching 0.8041 after applying specified hyperparameters, Support Vector Regression showed the most substantial improvement upon hyperparameter adjustment. Other models like Ridge and Lasso remained relatively stable. Random Forest's superior performance highlights its effectiveness for this prediction task.
 
 ## Next Steps
 * Develop a user interface using Gradio for interactive predictions.
