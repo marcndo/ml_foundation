@@ -30,3 +30,24 @@ This project focuses on predicting house prices using machine learning. It invol
 | Support Vector Regression  | $666261.94              | -0.0782                       |
 | Random Forest Regressor    | $285085.78              | 0.8026                        |
 | Gradient Boosting Regressor| $305397.92              | 0.7735                        |
+
+### Models with Specified Hyperparameters:
+
+| Model                      | RMSE                  | R-squared                      |
+|----------------------------|-----------------------|--------------------------------|
+| Linear Regression          | $599681907430005120.00| -873467188889441206796288.0000 |
+| Ridge Regression           | $369658.02  | 0.6681  |                                |
+| Lasso Regression           | $364716.64  | 0.6769  |                                |
+| Support Vector Regression  | $547372.91  | 0.2723  |                                |
+| Random Forest Regressor    | $284010.78  | 0.8041  |                                |
+| Gradient Boosting Regressor| $305397.92  | 0.7735  |                                |
+
+## Key Findings
+
+## Next Steps
+* Develop a user interface using Gradio for interactive predictions.
+* Explore deployment options using Streamlit or AWS.
+* Further optimize model hyperparameters.
+
+## Author
+[Marcel Ambo Ndowah]
