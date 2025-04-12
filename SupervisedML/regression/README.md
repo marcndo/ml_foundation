@@ -31,7 +31,7 @@ This project focuses on predicting house prices using machine learning. It invol
 | Random Forest Regressor    | $285085.78              | 0.8026                        |
 | Gradient Boosting Regressor| $305397.92              | 0.7735                        |
 
-### Models with Specified Hyperparameters:
+### Performance evaluation after hyperparameter tuning:
 
 | Model                      | RMSE                  | R-squared                      |
 |----------------------------|-----------------------|--------------------------------|
