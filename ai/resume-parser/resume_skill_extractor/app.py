@@ -13,6 +13,7 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 
+
 def extract_text_from_pdf(file_bytes):
     try:
         with fitz.open(stream=file_bytes, filetype="pdf") as doc:
@@ -21,7 +22,8 @@ def extract_text_from_pdf(file_bytes):
                 text += page.get_text()
         return text
     except Exception as e:
-        return f"❌ Failed to read PDF: {e}"
+        return f"Failed to read PDF: {e}"
+
 
 def summarize_resume_with_llm(text):
     if "Failed to read PDF" in text:
@@ -48,13 +50,15 @@ Resume:
         )
         return response.choices[0].message.content
     except Exception as e:
-        return f"❌ Error communicating with the LLM: {e}"
+        return f"Error communicating with the LLM: {e}"
+
 
 def analyze_resume(file_bytes):
     resume_text = extract_text_from_pdf(file_bytes)
     if not resume_text or not resume_text.strip():
-        return "❌ Could not extract any text from the resume. Please upload a clearer PDF."
+        return "Could not extract any text from the resume. Please upload a clearer PDF."
     return summarize_resume_with_llm(resume_text)
+
 
 iface = gr.Interface(
     fn=analyze_resume,
@@ -65,4 +69,4 @@ iface = gr.Interface(
 )
 
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(share=True)
