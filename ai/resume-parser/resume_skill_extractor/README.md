@@ -48,6 +48,13 @@ This project addresses these problems by:
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
-```bash
-git clone https://huggingface.co/spaces/your-username/resume-analyzer-groq
-d resume-analyzer-groq```
+```git clone https://huggingface.co/spaces/your-username/resume-analyzer-groqd resume-analyzer-groq```
+### 2. Install Dependencies
+```pip install -r requirements.txt```
+### 3. Set Up Environment Variables
+Create a ```.env``` file in the project root and add your Groq API key
+### 4. Run the App Locally
+```python app.py``` 
+
+
+
